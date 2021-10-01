@@ -29,6 +29,8 @@ You don't need to read input or print anything. *Your task is to complete the fu
 
 
 Constraints:
-1 ≤ N ≤ 105
-1 ≤ Arr[i] ≤ N
+```
+  1 ≤ N ≤ 105
+  1 ≤ Arr[i] ≤ N
+```
 

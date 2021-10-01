@@ -24,6 +24,8 @@ You don't need to read input or print anything. *Your task is to complete the fu
 
 
 Constraints:
-2 <= N <= 10ˆ5
-0 <= X <= 10ˆ6
-0 <= arr[i] <= 10ˆ6
+```
+  2 <= N <= 10ˆ5
+  0 <= X <= 10ˆ6
+  0 <= arr[i] <= 10ˆ6
+```
