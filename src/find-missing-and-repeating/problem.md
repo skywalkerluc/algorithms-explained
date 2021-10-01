@@ -34,3 +34,5 @@ Constraints:
   1 ≤ Arr[i] ≤ N
 ```
 
+*Expected Time Complexity: O(N)*
+*Expected Auxiliary Space: O(1)*
