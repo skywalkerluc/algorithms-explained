@@ -12,7 +12,6 @@ Check for **source** folder, it must have some folders with some challenges. Cho
 
 
 ## Core Values
-*Values are clickable*
 
 <details><summary>Less is more! :muscle:</summary><p>
 
@@ -27,8 +26,6 @@ We strive to be helpful without adding to the stress and creating hype.<br>
 Most endless stream resources (forums, newsletters, blogs, communities) are noisy and create questionable value.<br>
 Be mindful of that fact when adding resources.
 </p></details>
-
-<details><summary>Technology is always about human beings :man: :woman: :baby:.</summary><p>
 
 </p></details>
 
