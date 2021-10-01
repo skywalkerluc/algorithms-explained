@@ -10,12 +10,13 @@ The main idea here is:
 - Don't feel pressured to add any time and space complexity, just sharing how you came up with the idea
   is enough.
 
+***I'll be adding new problems daily.***
+
 *P.P.S. [Contributions](CONTRIBUTING.md) are welcome! Take a good look here before getting started*
 
 ----
 
 
-### I'll be adding new problems daily.
 
 
 ### Some coding practice Sites :zap:
