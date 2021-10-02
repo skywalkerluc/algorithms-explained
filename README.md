@@ -27,3 +27,4 @@ The main idea here is:
 - :link: [Project Euler](https://projecteuler.net/)
 - :link: [LeetCode](https://leetcode.com/)
 - :link: [Codility](https://www.codility.com/)
+- :link: [BinarySearch](https://binarysearch.com/)
