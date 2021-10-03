@@ -1,4 +1,4 @@
-*Given a value N, find the number of ways to make change for N cents, if we have infinite supply of each of S = { S1, S2, .. , SM } valued coins.*
+*Given a value N, find the number of ways to make change for N cents, if we have infinite supply of each of S = { Sˆ1, Sˆ2, .. , SˆM } valued coins.*
 
 Example 1:
 
