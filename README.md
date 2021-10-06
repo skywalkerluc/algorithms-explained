@@ -28,3 +28,6 @@ The main idea here is:
 - :link: [LeetCode](https://leetcode.com/)
 - :link: [Codility](https://www.codility.com/)
 - :link: [BinarySearch](https://binarysearch.com/)
+- :link: [AlgoExpert](https://www.algoexpert.io/product)
+- :link: [CodeChef](https://www.codechef.com/)
+- :link: [GeeksforGeeks](https://www.geeksforgeeks.org/)
