@@ -1,76 +1,43 @@
  import java.util.*;
-
-class GroupAnagrams {
-
-  public List<List<String>> groupAnagramsCategorizeBySorting(String[] strs) {
-
-    if (strs == null || strs.length == 0)
-      return new ArrayList<>();
-
-    Map<String, List<String>> stringAnagramsMap = new HashMap<>();
-    for (String s : strs) {
-      char[] arr = s.toCharArray();
-      Arrays.sort(arr);
-      String key = String.valueOf(arr);
-
-      if (!stringAnagramsMap.containsKey(key))
-        stringAnagramsMap.put(key, new ArrayList<>());
-
-      stringAnagramsMap.get(key).add(s);
-    }
-
-    List<List<String>> resultList = new ArrayList<>();
-    for (Map.Entry<String, List<String>> stringAnagrams : stringAnagramsMap.entrySet()) {
-      resultList.add(stringAnagrams.getValue());
-    }
-    return resultList;
-  }
-
-  public List<List<String>> groupAnagramsCategorizeByFrequency(String[] strs) {
-
-    // Check for empty inputs
-    if (strs == null || strs.length == 0)
-      return new ArrayList<>();
-
-    Map<String, List<String>> frequencyStringsMap = new HashMap<>();
-    for (String str : strs) {
-
-      String frequencyString = getFrequencyString(str);
-
-      // If the frequency string is present, add the string to the list
-      if (frequencyStringsMap.containsKey(frequencyString)) {
-        frequencyStringsMap.get(frequencyString).add(str);
+ public class GroupAnagramTogether {
+ 
+    public static List<List<String>> groupAnagrams(String[] strs) {
+ 
+       List<List<String>> result = new ArrayList<>();
+  
+       //Initialize hashmap
+       HashMap<String, List<String>> map = new HashMap<>();
+ 
+       //Traverse a list of string
+       for(String str: strs){
+ 
+         //Convert to character array
+          char[] chArr = str.toCharArray();
+          //Sort character array
+          Arrays.sort(chArr);
+          //Create a string
+          String key = new String(chArr);
+ 
+          //Create a key from a sorted string
+          //if this key is found add new string element
+          if(map.containsKey(key)){
+             map.get(key).add(str);
+ 
+          } else {
+             List<String> strList = new ArrayList<>();
+             strList.add(str);
+             map.put(key, strList);
+          }
+        }
+ 
+         result.addAll(map.values());
+         return result;
+   }
+ 
+    public static void main(String[] args) {
+ 
+        String[] strs = {"abc", "bca", "elf", "aab", "fle", "cab", "lel", "123", "231", "324"};
+        List<List<String>> result  = groupAnagrams(strs);
+        result.forEach(t -> System.out.println(t + " "));
       }
-      else {
-        // else create a new list
-        List<String> strList = new ArrayList<>();
-        strList.add(str);
-        frequencyStringsMap.put(frequencyString, strList);
-      }
-    }
-
-    return new ArrayList<>(frequencyStringsMap.values());
-  }
-
-  private String getFrequencyString(String str) {
-
-    // Frequency buckets
-    int[] freq = new int[26];
-
-    // Iterate over each character
-    for (char c : str.toCharArray()) {
-      freq[c - 'a']++;
-    }
-
-    // Start creating the frequency string
-    StringBuilder frequencyString = new StringBuilder("");
-    char c = 'a';
-    for (int i : freq) {
-      frequencyString.append(c);
-      frequencyString.append(i);
-      c++;
-    }
-
-    return frequencyString.toString();
-  }
 }
