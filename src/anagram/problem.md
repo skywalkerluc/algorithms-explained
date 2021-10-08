@@ -27,4 +27,6 @@ Constraints:
 ```
 
 
-*Expected Time Complexity: O(n)*
+*Time Complexity: O(n * k) (k is the length of the largest string)*
+
+*Space Complexity: O(n)*
